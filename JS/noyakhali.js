@@ -12,12 +12,19 @@ document.getElementById('donation-1').addEventListener('click',function(event){
    const mainBalence = parseFloat(getTextValueByID('main-balence'));
    let updateBalence = mainBalence - inptValue;
    document.getElementById('main-balence').innerText = updateBalence;
+   // Modal
+   modal.classList.remove('hidden');
+   // History
+   const now = new Date();
+   const entry = document.createElement('div');
+   entry.innerHTML = `
+         <div class="border border-black px-5 py-3 rounded-lg my-2">
+            <p class="text-xl font-bold">${inptValue} Taka is Donate for Flood at Noakhali, Bangladesh.</p>
+            <p> Date: ${now}</p>
+         </div>
+   `
+   document.getElementById('history').appendChild(entry);
    
-   
-    
-    
-    
-    
 })
 // Donation-2
 document.getElementById('donation-2').addEventListener('click',function(event){
@@ -33,11 +40,19 @@ document.getElementById('donation-2').addEventListener('click',function(event){
    let updateBalence = mainBalence - inptValue;
    document.getElementById('main-balence').innerText = updateBalence;
    
-   
-    
-    
-    
-    
+  // Modal
+  modal.classList.remove('hidden');
+  // History
+  const now = new Date();
+  const entry = document.createElement('div');
+  entry.innerHTML = `
+        <div class="border border-black px-5 py-3 rounded-lg my-2">
+            <p class="text-xl font-bold">${inptValue} Taka is Donate for Flood at Noakhali, Bangladesh.</p>
+            <p> Date: ${now}</p>
+         </div>
+  `
+  document.getElementById('history').appendChild(entry);
+  
 })
 // Donation-3
 document.getElementById('donation-3').addEventListener('click',function(event){
@@ -53,9 +68,24 @@ document.getElementById('donation-3').addEventListener('click',function(event){
    let updateBalence = mainBalence - inptValue;
    document.getElementById('main-balence').innerText = updateBalence;
    
-   
-    
-    
-    
-    
+   // Modal
+   modal.classList.remove('hidden');
+   // History
+   const now = new Date();
+   const entry = document.createElement('div');
+   entry.innerHTML = `
+         <div class="border border-black px-5 py-3 rounded-lg my-2">
+            <p class="text-xl font-bold">${inptValue} Taka is Donate for Flood at Noakhali, Bangladesh.</p>
+            <p> Date: ${now}</p>
+         </div>
+   `
+   document.getElementById('history').appendChild(entry);
 })
+//   Modal close Button
+ const closeModalButtons = document.querySelectorAll('#closeModal');
+        closeModalButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                modal.classList.add('hidden');
+            });
+ });
+

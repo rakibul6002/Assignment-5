@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en" theme="light">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,6 +45,19 @@
 
     <!-- Main Section Start-->
     <main>
+        <section>
+            <div id="modal" class="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 hidden">
+                <div class="bg-white rounded-lg shadow-lg md:w-1/5">
+                    <div class="p-4 flex flex-col items-center justify-center gap-3">
+                        <h2 class="text-2xl font-bold text-center">Congrates!</h2>
+                        <img class=" text-center" src="./assets/coin.png" alt="coin image">
+                        <p>You have donated for Humankind</p>
+                        <h1 class="text-xl   font-bold">Sucessfully</h1>
+                        <button id="closeModal" class="px-4 py-2 text-black font-bold bg-zinc-300 rounded">Close Confirmation</button>
+                    </div>
+                </div>
+            </div>
+        </section>
            <div id="donation" class="">
              <!-- Donation card-01 -->
              <section class="px-4 md:px-10 my-10">
@@ -157,10 +170,8 @@
              </section>
            </div>
             <!-- Hisotry Section -->
-        <section id="history"  class="px-4 md:px-10 my-10 hidden">
-                <div class=" flex items-center justify-center text-center">
-                    <h1 class="">ami tumi se</h1>
-                </div>
+        <section id="history"  class="px-4 md:px-10 my-10 hidden max-h-screen ">
+           
         </section>
     </main>
     <!-- Main Section End-->

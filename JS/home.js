@@ -36,4 +36,5 @@ document.getElementById('Donation-btn').addEventListener('click', function(event
     document.getElementById('Donation-btn').classList.add('bg-lime-400');
     document.getElementById('donation').classList.remove('hidden');
     
-})
+});
+
