@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- DaisyUI and Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <Header>
+         <!-- Main Header start -->
+        <div class="w-full  bg-[#F9F7F3]  flex flex-col gap-3 md:flex-row justify-between items-center px-4 md:px-10 pt-4 pb-8 ">
+            <div class="order-last md:order-none">
+                <button class=" text-lg md:text-2xl font-bold px-4 py-2 bg-lime-400 rounded-xl"><a href="./home.html">Home</a></button>
+            </div>
+            <div class="flex items-center gap-3">
+                <img src="./assets/logo.png" alt="Donate Bangladesh Logo" class="h-10 md:h-12 w-auto">
+                <h1 class="text-xl md:text-2xl font-bold">Donate Bangladesh</h1>
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="./assets/coin.png" alt="Coin Image" class="h-8 md:h-10 w-auto">
+                <h1 class="text-lg md:text-2xl"><span id="main-balence">22040</span> BDT</h1>
+            </div>
+        </div>
+        <!-- Main Header End -->
+    </Header>
+</body>
+</html>

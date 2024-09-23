@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en" theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Donate Bangladesh - Helping those in need.">
+    <meta name="keywords" content="donate, charity, Bangladesh, help, support">
+    <title>Donate Bangladesh</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+
+    <!-- DaisyUI and Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Header Section Start-->
+    <header class="sticky top-0 z-10
+    ">
+        <!-- Main Header start -->
+        <div class="w-full  bg-[#F9F7F3]  flex flex-col gap-3 md:flex-row justify-between items-center px-4 md:px-10 pt-4 pb-8 ">
+            <div class="order-last md:order-none">
+                <button class=" text-lg md:text-2xl font-bold px-4 py-2 bg-lime-400 rounded-xl"><a href="./blog.html">Blog</a></button>
+            </div>
+            <div class="flex items-center gap-3">
+                <img src="./assets/logo.png" alt="Donate Bangladesh Logo" class="h-10 md:h-12 w-auto">
+                <h1 class="text-xl md:text-2xl font-bold">Donate Bangladesh</h1>
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="./assets/coin.png" alt="Coin Image" class="h-8 md:h-10 w-auto">
+                <h1 class="text-lg md:text-2xl"><span id="main-balence">22040</span> BDT</h1>
+            </div>
+        </div>
+        <!-- Main Header End -->
+        
+        <!-- Header Button start -->
+        <div class="w-full flex  items-center justify-center gap-4 pt-10 pb-8 bg-white shadow-md ">
+            <button id="Donation-btn" class="text-lg md:text-2xl font-bold px-4 py-2 border bg-lime-400 rounded-xl ">Donation</button>
+            <button id="history-btn" class="text-lg md:text-2xl font-bold px-4 py-2 border border-black rounded-xl ">History</button>
+        </div>
+        
+        <!-- Header Button End -->
+    </header>
+    <!-- Header Section End-->
+
+    <!-- Main Section Start-->
+    <main>
+           <div id="donation" class="">
+             <!-- Donation card-01 -->
+             <section class="px-4 md:px-10 my-10">
+                <div class="border border-black p-8 rounded-lg flex flex-col md:flex-row   gap-8  ">
+                    <!-- Card Image -->
+                    <div class=" w-full md:w-1/2">
+                        <img class="  w-full lg:[10000px] h-auto lg:h-[630px]" src="./assets/noakhali.png" alt="">
+                    </div>
+                    <!-- Card Content -->
+                    <div class=" w-full md:w-1/2">
+                        <!-- Amount -->
+                         <div class="w-44   flex items-center gap-3 bg-zinc-200 px-4 py-2 rounded-xl ">
+                            <img src="./assets/coin.png" alt="">
+                            <p class="text-xl"> <span id="dnt-balence-1">100000</span>BDT</p>
+                         </div>
+                         <!-- content -->
+                          <div>
+                            <h1 class="text-2xl font-bold mt-10">Donate for Flood at Noakhali, Bangladesh</h1>
+                            <p class="mt-5 text-lg">
+                                The recent floods in Noakhali have caused catastrophic damage, leaving countless families without homes and disrupting vital infrastructure. This disaster has had a profound impact on the community, affecting access to clean water, food supplies, and medical care. As people struggle to cope with the aftermath, your support is urgently needed.
+
+                                Your donations will be instrumental in providing essential supplies, including food, clean drinking water, clothing, and medical assistance to those affected. Every contribution, no matter how big or small, can create a significant impact on the lives of individuals and families trying to rebuild after this crisis.
+                                
+                                We invite you to join us in these relief efforts. By coming together as a community, we can help ensure that those in need receive the support necessary to recover and rebuild their lives. Your generosity can bring hope and relief during this challenging time. Together, we can make a lasting difference and help restore dignity to those who have lost so much. Let’s unite to support our fellow citizens in Noakhali and help them on their journey to recovery.
+                            </p>
+                          </div>
+                        <!--Donate Input Field -->
+                         <div class="mt-10">
+                            <input id="inpt-1" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full lg:h-14" />
+                         </div>
+                        <!-- Donate Button -->
+                         <div>
+                            <button id="donation-1" class="bg-lime-400 mt-10 text-2xl font-bold text-center w-full py-2 rounded-lg">Donate Now</button>
+                         </div>
+                    </div>
+                </div>
+             </section>
+              <!-- Donation card-02 -->
+              <section class="px-4 md:px-10 my-10">
+                <div class="border border-black p-8 rounded-lg flex flex-col md:flex-row   gap-8  ">
+                    <!-- Card Image -->
+                    <div class=" w-full md:w-1/2">
+                        <img class="  w-full lg:[10000px]
+                        h-auto lg:h-[630px]" src="./assets/feni.png" alt="">
+                    </div>
+                    <!-- Card Content -->
+                    <div class=" w-full md:w-1/2">
+                        <!-- Amount -->
+                         <div class="w-44   flex items-center gap-3 bg-zinc-200 px-4 py-2 rounded-xl ">
+                            <img src="./assets/coin.png" alt="">
+                            <p class="text-xl"> <span id="dnt-balence-2">10000</span>BDT</p>
+                         </div>
+                         <!-- content -->
+                          <div>
+                            <h1 class="text-2xl font-bold mt-10">Donate for Flood Relief in Feni,Bangladesh</h1>
+                            <p class="mt-5 text-lg">
+                                The recent floods in Feni have wreaked havoc on local communities, resulting in widespread devastation, disruption, and loss. Homes have been destroyed, and vital infrastructure has been severely impacted, leaving many families struggling to survive. In the face of this calamity, your generous donations are critical to providing immediate aid to those in desperate need.
+
+                                Your contributions will help supply essential items such as food, clean drinking water, and medical supplies to affected individuals and families. These resources are vital for sustaining life and health in the aftermath of the disaster. Many are facing urgent challenges, including food insecurity and lack of access to healthcare, making your support even more crucial.
+
+                                Together, we can offer the necessary support to help these communities recover and rebuild their lives. Every donation, regardless of size, plays a significant role in making a real difference. By coming together, we can provide not just immediate relief but also hope and a path toward recovery for those impacted by this disaster.
+                            </p>
+                          </div>
+                        <!--Donate Input Field -->
+                         <div class="mt-10">
+                            <input id="inpt-2" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full lg:h-14" />
+                         </div>
+                        <!-- Donate Button -->
+                         <div>
+                            <button id="donation-2" class="bg-lime-400 mt-10 text-2xl font-bold text-center w-full py-2 rounded-lg">Donate Now</button>
+                         </div>
+                    </div>
+                </div>
+             </section>
+              <!-- Donation card-03 -->
+              <section class="px-4 md:px-10 my-10">
+                <div class="border border-black p-8 rounded-lg flex flex-col md:flex-row   gap-8  ">
+                    <!-- Card Image -->
+                    <div class=" w-full md:w-1/2">
+                        <img class="  w-full lg:[10000px]h-auto lg:h-[630px]" src="./assets/quota-protest.png " alt="">
+                    </div>
+                    <!-- Card Content -->
+                    <div class=" w-full md:w-1/2">
+                        <!-- Amount -->
+                         <div class="w-44   flex items-center gap-3 bg-zinc-200 px-4 py-2 rounded-xl ">
+                            <img src="./assets/coin.png" alt="">
+                            <p class="text-xl"> <span id="dnt-balence-3">10000</span>BDT</p>
+                         </div>
+                         <!-- content -->
+                          <div>
+                            <h1 class="text-2xl font-bold mt-10">Aid for Injured in the Quota Movement</h1>
+                            <p class="mt-5 text-lg">
+                                The recent Quota movement has led to widespread protests and significant unrest, resulting in numerous injuries and considerable hardship for many individuals involved. The impact of this movement has not only affected those on the front lines but has also reverberated through communities, leaving many grappling with the aftermath of violence and disruption.
+
+                                In the wake of these events, your support is crucial. Injured individuals require immediate medical assistance, rehabilitation, and essential supplies to aid in their recovery. Many are facing not only physical injuries but also emotional trauma, making comprehensive care vital for their healing process. By contributing, you ensure that those affected receive the necessary medical treatment and support services they desperately need during this challenging time.
+
+                                Every donation plays a vital role in alleviating the suffering of these brave individuals. Your generosity can help provide medical supplies, facilitate rehabilitation efforts, and offer emotional support to those in distress. It is essential that we stand in solidarity with those  this difficult period and rebuild their lives.
+                            </p>
+                          </div>
+                        <!--Donate Input Field -->
+                         <div class="mt-10">
+                            <input id="inpt-3" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full lg:h-14" />
+                         </div>
+                        <!-- Donate Button -->
+                         <div>
+                            <button id="donation-3" class="bg-lime-400 mt-10 text-2xl font-bold text-center w-full py-2 rounded-lg">Donate Now</button>
+                         </div>
+                    </div>
+                </div>
+             </section>
+           </div>
+            <!-- Hisotry Section -->
+        <section id="history"  class="px-4 md:px-10 my-10 hidden">
+                <div class=" flex items-center justify-center text-center">
+                    <h1 class="">ami tumi se</h1>
+                </div>
+        </section>
+    </main>
+    <!-- Main Section End-->
+
+    <!-- Footer Section Start-->
+    <footer class="bg-[#F9F7F3] text-center p-4 md:p-6">
+        <p>&copy; 2024 Donate Bangladesh. All rights reserved.</p>
+    </footer>
+    <!-- Footer Section End-->
+
+    <!-- Java Scrip Link -->
+     <script src="./JS/home.js"></script>
+     <script src="./JS/utilities.js"></script>
+     <script src="./JS/noyakhali.js"></script>
+</body>
+</html>
