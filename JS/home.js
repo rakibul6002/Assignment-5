@@ -1,6 +1,22 @@
+// Blog Button
+
+// document.getElementById('blog-btn').addEventListener('click', function(event){
+//     event.preventDefault();
+//     document.getElementById('blog-btn').innerText="Home";
+//     document.getElementById('blog-btn').classList.add('home');
+    
+
+// });
+// document.getElementsByClassName('home').addEventListener('click', function(event){
+//     event.preventDefault();
+//     document.getElementsByClassName('home').innerText="Blog";
+// })
+
+
 // History button
 
-document.getElementById('history-btn').addEventListener('click', function(){
+document.getElementById('history-btn').addEventListener('click', function(event){
+    event.preventDefault();
     document.getElementById('Donation-btn').classList.remove('bg-lime-400');
     document.getElementById('Donation-btn').classList.add('border-black');
     document.getElementById('donation').classList.add('hidden');
@@ -11,7 +27,8 @@ document.getElementById('history-btn').addEventListener('click', function(){
 })
 // Donation button
 
-document.getElementById('Donation-btn').addEventListener('click', function(){
+document.getElementById('Donation-btn').addEventListener('click', function(event){
+    event.preventDefault();
     document.getElementById('history-btn').classList.remove('bg-lime-400');
     document.getElementById('history-btn').classList.add('border-black');
     document.getElementById('history').classList.add('hidden');
