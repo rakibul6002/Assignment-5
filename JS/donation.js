@@ -16,13 +16,14 @@ document.getElementById('donation-1').addEventListener('click',function(event){
    // Validetion
 
    if(inptValue <= 0 || isNaN(inptValue)){
-      document.getElementById('error').classList.remove('hidden');
+     
       document.getElementById('main-balence').innerText= mainBalence;
       document.getElementById('dnt-balence-1').innerText= donateValue;
+      alert('Do not enter a negative number or srting charechter!!!')
       return;
    }
    else{
-      document.getElementById('error').classList.add('hidden');
+      
       // Modal
       modal.classList.remove('hidden');
       // History
@@ -55,13 +56,12 @@ document.getElementById('donation-2').addEventListener('click',function(event){
   // Validetion
 
   if(inptValue <= 0 || isNaN(inptValue)){
-   document.getElementById('error').classList.remove('hidden');
    document.getElementById('main-balence').innerText= mainBalence;
    document.getElementById('dnt-balence-2').innerText= donateValue;
+   alert('Do not enter a negative number or srting charechter!!!')
    return;
 }
 else{
-   document.getElementById('error').classList.add('hidden');
    // Modal
    modal.classList.remove('hidden');
    // History
@@ -96,13 +96,13 @@ document.getElementById('donation-3').addEventListener('click',function(event){
    // Validetion
 
    if(inptValue <= 0 || isNaN(inptValue)){
-      document.getElementById('error').classList.remove('hidden');
+
       document.getElementById('main-balence').innerText= mainBalence;
       document.getElementById('dnt-balence-3').innerText= donateValue;
+      alert('Do not enter a negative number or srting charechter!!!')
       return;
    }
    else{
-      document.getElementById('error').classList.add('hidden');
       // Modal
       modal.classList.remove('hidden');
        // History
