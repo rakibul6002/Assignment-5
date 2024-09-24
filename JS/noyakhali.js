@@ -80,6 +80,23 @@ document.getElementById('donation-3').addEventListener('click',function(event){
          </div>
    `
    document.getElementById('history').appendChild(entry);
+   // Validetion
+
+
+   // const input = document.getElementById('inpt-3').value;
+   //  const errorMessage = document.getElementById('error');
+
+   //  // Clear previous error message
+   //  errorMessage.classList.add('hidden');
+
+   //  // Validate input
+   //  const number = Number(input);
+   //  if (isNaN(number) || number === 0) {
+   //      errorMessage.classList.remove('hidden');
+   //      document.getElementById('main-balence').innerText = mainBalence;
+   //  } else {
+       
+   //  }
 })
 //   Modal close Button
  const closeModalButtons = document.querySelectorAll('#closeModal');
