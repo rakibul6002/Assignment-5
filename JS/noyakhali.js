@@ -12,9 +12,20 @@ document.getElementById('donation-1').addEventListener('click',function(event){
    const mainBalence = parseFloat(getTextValueByID('main-balence'));
    let updateBalence = mainBalence - inptValue;
    document.getElementById('main-balence').innerText = updateBalence;
-   // Modal
-   modal.classList.remove('hidden');
-   // History
+   
+   // Validetion
+
+   if(inptValue <= 0 || isNaN(inptValue)){
+      document.getElementById('error').classList.remove('hidden');
+      document.getElementById('main-balence').innerText= mainBalence;
+      document.getElementById('dnt-balence-1').innerText= donateValue;
+      return;
+   }
+   else{
+      document.getElementById('error').classList.add('hidden');
+      // Modal
+      modal.classList.remove('hidden');
+      // History
    const now = new Date();
    const entry = document.createElement('div');
    entry.innerHTML = `
@@ -24,6 +35,7 @@ document.getElementById('donation-1').addEventListener('click',function(event){
          </div>
    `
    document.getElementById('history').appendChild(entry);
+   }
    
 })
 // Donation-2
@@ -39,10 +51,20 @@ document.getElementById('donation-2').addEventListener('click',function(event){
    const mainBalence = parseFloat(getTextValueByID('main-balence'));
    let updateBalence = mainBalence - inptValue;
    document.getElementById('main-balence').innerText = updateBalence;
-   
-  // Modal
-  modal.classList.remove('hidden');
-  // History
+  
+  // Validetion
+
+  if(inptValue <= 0 || isNaN(inptValue)){
+   document.getElementById('error').classList.remove('hidden');
+   document.getElementById('main-balence').innerText= mainBalence;
+   document.getElementById('dnt-balence-2').innerText= donateValue;
+   return;
+}
+else{
+   document.getElementById('error').classList.add('hidden');
+   // Modal
+   modal.classList.remove('hidden');
+   // History
   const now = new Date();
   const entry = document.createElement('div');
   entry.innerHTML = `
@@ -52,6 +74,8 @@ document.getElementById('donation-2').addEventListener('click',function(event){
          </div>
   `
   document.getElementById('history').appendChild(entry);
+   
+}
   
 })
 // Donation-3
@@ -67,10 +91,21 @@ document.getElementById('donation-3').addEventListener('click',function(event){
    const mainBalence = parseFloat(getTextValueByID('main-balence'));
    let updateBalence = mainBalence - inptValue;
    document.getElementById('main-balence').innerText = updateBalence;
-   
-   // Modal
-   modal.classList.remove('hidden');
-   // History
+  
+  
+   // Validetion
+
+   if(inptValue <= 0 || isNaN(inptValue)){
+      document.getElementById('error').classList.remove('hidden');
+      document.getElementById('main-balence').innerText= mainBalence;
+      document.getElementById('dnt-balence-3').innerText= donateValue;
+      return;
+   }
+   else{
+      document.getElementById('error').classList.add('hidden');
+      // Modal
+      modal.classList.remove('hidden');
+       // History
    const now = new Date();
    const entry = document.createElement('div');
    entry.innerHTML = `
@@ -80,23 +115,8 @@ document.getElementById('donation-3').addEventListener('click',function(event){
          </div>
    `
    document.getElementById('history').appendChild(entry);
-   // Validetion
-
-
-   // const input = document.getElementById('inpt-3').value;
-   //  const errorMessage = document.getElementById('error');
-
-   //  // Clear previous error message
-   //  errorMessage.classList.add('hidden');
-
-   //  // Validate input
-   //  const number = Number(input);
-   //  if (isNaN(number) || number === 0) {
-   //      errorMessage.classList.remove('hidden');
-   //      document.getElementById('main-balence').innerText = mainBalence;
-   //  } else {
-       
-   //  }
+   }
+  
 })
 //   Modal close Button
  const closeModalButtons = document.querySelectorAll('#closeModal');
