@@ -19,7 +19,7 @@ document.getElementById('donation-1').addEventListener('click',function(event){
      
       document.getElementById('main-balence').innerText= mainBalence;
       document.getElementById('dnt-balence-1').innerText= donateValue;
-      alert('Do not enter a negative number or srting charechter!!!')
+      alert('Do not enter a negative number or srting character!!!')
       return;
    }
    else{
@@ -58,7 +58,7 @@ document.getElementById('donation-2').addEventListener('click',function(event){
   if(inptValue <= 0 || isNaN(inptValue)){
    document.getElementById('main-balence').innerText= mainBalence;
    document.getElementById('dnt-balence-2').innerText= donateValue;
-   alert('Do not enter a negative number or srting charechter!!!')
+   alert('Do not enter a negative number or srting character!!!')
    return;
 }
 else{
@@ -99,7 +99,7 @@ document.getElementById('donation-3').addEventListener('click',function(event){
 
       document.getElementById('main-balence').innerText= mainBalence;
       document.getElementById('dnt-balence-3').innerText= donateValue;
-      alert('Do not enter a negative number or srting charechter!!!')
+      alert('Do not enter a negative number or srting character!!!')
       return;
    }
    else{
