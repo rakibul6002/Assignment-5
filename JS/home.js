@@ -1,17 +1,3 @@
-// Blog Button
-
-// document.getElementById('blog-btn').addEventListener('click', function(event){
-//     event.preventDefault();
-//     document.getElementById('blog-btn').innerText="Home";
-//     document.getElementById('blog-btn').classList.add('home');
-    
-
-// });
-// document.getElementsByClassName('home').addEventListener('click', function(event){
-//     event.preventDefault();
-//     document.getElementsByClassName('home').innerText="Blog";
-// })
-
 
 // History button
 
